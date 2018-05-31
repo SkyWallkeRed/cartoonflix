@@ -1,0 +1,26 @@
+<div class="appComp">
+
+    <!-- <div id="icons">  -->
+    <!-- <i class="cloud"></i>
+    <i class="apple"></i>
+    <i class="robot"></i> -->
+    <!-- </div> -->
+    <div class="header ">
+        <h1 class="awesome ">   Cart<i class="robot"></i><i class="robot"></i>n A Flix</h1>
+
+        <app-balance ></app-balance>
+    </div>
+  
+    <mat-tab-group class="fade-in tab">
+        
+        <mat-tab label=" All Films">
+            <app-film-list></app-film-list>
+        </mat-tab>
+        <mat-tab  label=" My Films">
+            <app-my-films></app-my-films>
+        </mat-tab>
+    </mat-tab-group>
+
+
+    <router-outlet></router-outlet>
+</div>

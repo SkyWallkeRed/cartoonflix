@@ -1,0 +1,9 @@
+
+<form class="filter-form">
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]='searchtext' name="searchtext" (ngModelChange)='filter(searchtext)' placeholder="Serch a Film">
+    <!-- *ngFor="let c of characters | filter : searchText" -->
+  </mat-form-field>
+
+
+</form>

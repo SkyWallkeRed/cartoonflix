@@ -1,0 +1,8 @@
+<button mat-button [matMenuTriggerFor]="menu">
+  Balance<i class="material-icons">
+      account_balance_wallet
+      </i>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>{{funds}}</button>
+</mat-menu>

@@ -1,0 +1,8 @@
+<!-- // -->
+
+<app-filter  (filteredMovies)="filteredFilms($event)">
+</app-filter>
+
+<div *ngFor='let movie of movies | movieFilter : searchtext' class="film-list">
+    <app-film (clickedMovie)="getClickedMovie($event)" [type]="this.type" [movie]='movie'></app-film>
+</div>

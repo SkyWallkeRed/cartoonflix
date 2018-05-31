@@ -1,0 +1,15 @@
+<div class="shopping-cart">
+    <i class="material-icons ">
+        shopping_cart
+    </i>{{movies.length}}
+    <i class="material-icons">
+        movie
+    </i>
+</div>
+<app-filter></app-filter>
+<div class="myFilmsList">
+    <div>
+        <app-film *ngFor='let movie of movies; let idx=index' (clickedMovie)="getClickedMovie($event)" [movie]='movie' (clickedMovieInMyCollection)='removeClickedMovie($event)'></app-film>
+    </div>
+
+</div>
